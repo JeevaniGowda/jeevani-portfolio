@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeevani Gowda BS | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e2e8f0);
+      color: #2d3748;
+    }
+  
+    header {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .profile-section {
+      display: flex;
+      align-items: center;
+    }
+  
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.5rem;
+      border: 3px solid white;
+    }
+  
+    .profile-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.4;
+    }
+  
+    .profile-text .name {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+    }
+  
+    .profile-text .degree,
+    .profile-text .location {
+      font-size: 1rem;
+    }
+  
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    nav a {
+      margin-left: 2rem;
+      color: white;
+      text-decoration: none;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      position: relative;
+    }
+  
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: white;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s;
+    }
+  
+    nav a:hover::after {
+      width: 100%;
+    }
+    .hero {
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+}
+    .hero .info {
+      max-width: 400px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  
+    .hero .info h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .hero .info p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    section {
+      padding: 4rem 3rem;
+    }
+  
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #4d6bff;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+  
+    section h2::after {
+      content: "";
+      width: 50px;
+      height: 4px;
+      background: #764ba2;
+      display: block;
+      margin-top: 0.5rem;
+    }
+  
+    #about, #education, #skills, #projects, .contact {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+  
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+  
+    .contact a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #5a67d8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  
+    .contact a:hover {
+      text-decoration: underline;
+      color: #764ba2;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-section">
+      <img src="images/profile.png" alt="Profile Picture" class="profile-pic">
+      <div class="profile-text">
+        <div class="name">Jeevani Gowda BS</div>
+        <div class="degree">B.Tech in Computer Science Engineering</div>
+        <div class="location">Bangalore, India</div>
+     
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#miniprojects">Mini Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="info">
+      <h1>Jeevani Gowda BS</h1>
+      <p>B.Tech in Computer Science Engineering</p>
+      <p>Bangalore, India</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Hello! I'm Jeevani Gowda BS, an engineering student who enjoys networking with people and believes in the power of good communication. I'm always eager to learn new things, improve my skills, and become more productive each day. I strive to grow both personally and professionally by taking on new experiences and challenges.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Completed schooling at Nirmala Rani High School (State Board) in 2020 with 80%.</li>
+      <li>Completed PU grade in Chaitanya Techno College (PCMC - State Board) in 2022 with 82%.</li>
+      <li>Currently pursuing my 3rd year (6th Semester) B.Tech in Computer Science Engineering at Presidency University with an overall CGPA of 7.57.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python,SQL</li>
+      <li>Web Development: HTML,CSS</li>
+      <li>Mobile Development: Android Studio</li>
+      <li>Tools:jupyter,Visual Studio Code</li>
+      <li>Database: MySQL,DBMSs</li>
+      <li>Soft Skills: Teamwork, Problem-solving, Communication</li>
+    </ul>
+  </section>
+  <section id="miniprojects">
+    <h2>Mini Projects</h2>
+    <ul>
+      <li>Developed a mobile application for rating restaurant dishes, featuring a user-friendly interface built with Android Studio.</li>
+      <li>Created an Online Teaching System website using C# and the ASP.NET Framework, enabling interactive learning and content management.</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:jeevanigowda04@gmail.com">jeevanigowda04@gmail.com</a>
+    <a href="tel:+91 980100285">+91 9980100285</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Jeevani Gowda BS
+  </footer>
+</body>
+</html>
