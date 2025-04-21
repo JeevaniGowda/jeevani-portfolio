@@ -165,22 +165,27 @@
     }
 
     .resume-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.5rem;
-      background-color: rgb(255, 255, 255);
-      color: #a24b4b;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s, color 0.3s;
-    }
+  background-color: #3bc7ff; /* Vibrant red */
+  color: white;
+  padding: 0.5rem 1rem;       /* Smaller padding */
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 59, 63, 0.3);
+  display: inline-block;
+  margin: 1rem auto;
+  text-align: center;
+  max-width: fit-content;
+}
+.resume-btn:hover {
+  background-color:#3bc7ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(217, 4, 41, 0.4);
+}
 
-    .resume-btn:hover {
-      background-color: #e2e8f0;
-      color: #d8975a;
-    }
   </style>
 </head>
 <body>
@@ -240,7 +245,9 @@
     <h2>Contact Me</h2>
     <a href="mailto:jeevanigowda04@gmail.com">Email: jeevanigowda04@gmail.com</a>
     <a href="tel:+919980100285">Phone: +91 9980100285</a>
-    <a href="files/Jeevani_Resume.pdf" download class="resume-btn">Resume: Download Resume</a>
+    <div style="text-align: center;">
+    <a href="files/Jeevani_Resume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
   </section>
 
   <footer>
