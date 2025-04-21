@@ -11,13 +11,13 @@
       padding: 0;
       box-sizing: border-box;
     }
-  
+
     body {
       font-family: 'Open Sans', sans-serif;
       background: linear-gradient(to right, #f0f4f8, #e2e8f0);
       color: #2d3748;
     }
-  
+
     header {
       background: linear-gradient(to right, #667eea, #764ba2);
       color: white;
@@ -28,12 +28,12 @@
       flex-wrap: wrap;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-  
+
     .profile-section {
       display: flex;
       align-items: center;
     }
-  
+
     .profile-pic {
       width: 90px;
       height: 90px;
@@ -42,29 +42,29 @@
       margin-right: 1.5rem;
       border: 3px solid white;
     }
-  
+
     .profile-text {
       display: flex;
       flex-direction: column;
       line-height: 1.4;
     }
-  
+
     .profile-text .name {
       font-size: 2rem;
       font-weight: bold;
       font-family: 'Playfair Display', serif;
     }
-  
+
     .profile-text .degree,
     .profile-text .location {
       font-size: 1rem;
     }
-  
+
     nav {
       display: flex;
       flex-wrap: wrap;
     }
-  
+
     nav a {
       margin-left: 2rem;
       color: white;
@@ -73,7 +73,7 @@
       font-size: 1.1rem;
       position: relative;
     }
-  
+
     nav a::after {
       content: "";
       position: absolute;
@@ -84,19 +84,21 @@
       bottom: -5px;
       transition: 0.3s;
     }
-  
+
     nav a:hover::after {
       width: 100%;
     }
+
     .hero {
-  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 3rem;
-  color: white;
-}
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 3rem;
+      color: white;
+    }
+
     .hero .info {
       max-width: 400px;
       background: rgba(0, 0, 0, 0.6);
@@ -104,22 +106,22 @@
       border-radius: 20px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
-  
+
     .hero .info h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.2rem;
       margin-bottom: 1rem;
     }
-  
+
     .hero .info p {
       font-size: 1.1rem;
       margin-bottom: 0.5rem;
     }
-  
+
     section {
       padding: 4rem 3rem;
     }
-  
+
     section h2 {
       font-family: 'Playfair Display', serif;
       color: #4d6bff;
@@ -127,7 +129,7 @@
       margin-bottom: 1rem;
       position: relative;
     }
-  
+
     section h2::after {
       content: "";
       width: 50px;
@@ -136,7 +138,7 @@
       display: block;
       margin-top: 0.5rem;
     }
-  
+
     #about, #education, #skills, #projects, .contact {
       background: white;
       border-radius: 12px;
@@ -144,11 +146,11 @@
       margin-bottom: 2rem;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
     }
-  
+
     ul li {
       margin-bottom: 0.8rem;
     }
-  
+
     .contact a {
       display: block;
       margin: 0.5rem 0;
@@ -156,18 +158,36 @@
       font-weight: bold;
       text-decoration: none;
     }
-  
+
     .contact a:hover {
       text-decoration: underline;
       color: #764ba2;
     }
-  
+
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       background: linear-gradient(to right, #667eea, #764ba2);
       color: white;
       font-size: 0.9rem;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.5rem;
+      background-color: white;
+      color: #764ba2;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .resume-btn:hover {
+      background-color: #e2e8f0;
+      color: #5a67d8;
     }
   </style>
 </head>
@@ -179,7 +199,6 @@
         <div class="name">Jeevani Gowda BS</div>
         <div class="degree">B.Tech in Computer Science Engineering</div>
         <div class="location">Bangalore, India</div>
-     
       </div>
     </div>
     <nav>
@@ -217,14 +236,15 @@
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Languages: Python,SQL</li>
-      <li>Web Development: HTML,CSS</li>
+      <li>Languages: Python, SQL</li>
+      <li>Web Development: HTML, CSS</li>
       <li>Mobile Development: Android Studio</li>
-      <li>Tools:jupyter,Visual Studio Code</li>
-      <li>Database: MySQL,DBMSs</li>
+      <li>Tools: Jupyter, Visual Studio Code</li>
+      <li>Database: MySQL, DBMSs</li>
       <li>Soft Skills: Teamwork, Problem-solving, Communication</li>
     </ul>
   </section>
+
   <section id="miniprojects">
     <h2>Mini Projects</h2>
     <ul>
@@ -236,11 +256,12 @@
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
     <a href="mailto:jeevanigowda04@gmail.com">jeevanigowda04@gmail.com</a>
-    <a href="tel:+91 980100285">+91 9980100285</a>
+    <a href="tel:+919980100285">+91 9980100285</a>
   </section>
 
   <footer>
-    &copy; 2025 Jeevani Gowda BS
+    &copy; 2025 Jeevani Gowda BS <br>
+    <a href="files/Jeevani_Resume.pdf" download class="resume-btn">Download Resume</a>
   </footer>
 </body>
 </html>
